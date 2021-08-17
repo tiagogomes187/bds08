@@ -1,8 +1,14 @@
-import "./assets/styles/custom.scss";
-import "./App.css";
+import Navbar from './components/Navbar';
+import './assets/styles/custom.scss';
+import './App.css';
 
-function App() {
-  return <h1>Desafio GitHub API</h1>;
-}
+const App = () => {
+  return (
+    <>
+      <Navbar />
+      <h1>Desafio GitHub API</h1>;
+    </>
+  );
+};
 
 export default App;
