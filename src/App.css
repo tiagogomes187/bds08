@@ -12,3 +12,7 @@ a, a:hover {
     text-decoration: none;
     color: unset;
 }
+
+p {
+    font-weight: 400;
+}
