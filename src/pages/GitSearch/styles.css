@@ -1,20 +1,21 @@
-.cep-search-container {
+.git-search-container {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  padding: 20px;
-}
-
-.search-container {
-  display: flex;
-  flex-direction: column;
+  padding: 10px;
   align-items: flex-start;
-  padding: 30px 40px;
   background-color: #f6f6f6;
   border-radius: 5px;
 }
 
+.git-container-topo {
+  margin-top: 54px;
+  padding: 30px;
+  background-color: #E6F7FF
+}
+
 .search-container h1 {
+  font-size: 1.5em;
   color: #262626;
   font-weight: bold;
   margin-bottom: 12px;
@@ -33,7 +34,7 @@
   font-size: 16px;
   text-align: center;
   height: 40px;
-  width: 240px;
+  width: 215px;
   margin-bottom: 25px;
 }
 
@@ -44,44 +45,69 @@
 .search-button {
   height: 40px;
   width: 160px;
-  margin-bottom: 35px;
   color: #fff;
 }
 
 .git-card-result-content {
-  display: flex;
-  flex-direction: row;
-}
-
-.git-card-img {
-  width: 250px;
-  height: 250px;
-  border-radius: 10px;
-}
-
-.git-card-img p {
-  color: rgb(238, 0, 0);
-}
-
-.git-card-result {
-  margin-left: 10px;
+  background-color: #F5F5F5;
+  margin-top: 54px;
+  width: 280px;
   display: flex;
   flex-direction: column;
 }
 
+.git-card-img {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.git-card-result {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
 .git-card-result h5 {
-  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   color: #1890FF;
 }
 
 .git-card-img img {
   border-radius: 10px;
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: auto;
 }
 
 @media (min-width: 576px) {
+  .git-card-result-content {
+    width: auto;
+  }
   .search-input {
-    width: 480px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  .git-card-result {
+    width: auto;
+    height: auto;
+    margin-bottom: 0px;
+  }
+  .git-card-result-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .git-card-img img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .git-card-result {
+    width: auto;
   }
 }

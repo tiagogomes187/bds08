@@ -47,22 +47,24 @@ const GitSearch = () => {
   return (
     <div className="git-search-container">
       <div className="container search-container">
-        <h1>Encontre um perfil Github</h1>
-        <form onSubmit={handleSubmit}>
-          <div className="form-container">
-            <input
-              type="text"
-              name="login"
-              value={formData.login}
-              className="search-input"
-              placeholder="Enter your GitHub user"
-              onChange={handleChange}
-            />
-            <button type="submit" className="btn btn-primary search-button">
-              Encontrar
-            </button>
-          </div>
-        </form>
+        <div className="git-container-topo">
+          <h1>Encontre um perfil Github</h1>
+          <form onSubmit={handleSubmit}>
+            <div className="form-container">
+              <input
+                type="text"
+                name="login"
+                value={formData.login}
+                className="search-input"
+                placeholder="Enter your GitHub user"
+                onChange={handleChange}
+              />
+              <button type="submit" className="btn btn-primary search-button">
+                Encontrar
+              </button>
+            </div>
+          </form>
+        </div>
 
         <div className="git-card-result-content">
           <div className="git-card-img">
@@ -71,9 +73,9 @@ const GitSearch = () => {
             )}
           </div>
           <div className="git-card-result">
-            <h5>Informações</h5>
             {perfilGit && (
               <>
+                <h5>Informações</h5>
                 <ResultCard title="Perfil:" description={perfilGit.url} />
                 <ResultCard
                   title="Seguidores:"
